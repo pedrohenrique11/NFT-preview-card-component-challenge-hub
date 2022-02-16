@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;600&display=swap');
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    --Very-dark-blue-main: hsl(217, 54%, 11%);
+    --Very-dark-blue-card: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Very-dark-blue-main);
+    color: white;
+}
+.card__container {
+    display: flex;
+    flex-direction: column;
+
+    padding: 25px;
+    margin: 110px auto;
+    border-radius: 16px;
+
+    width: 340px;
+    height: 620px;
+    background-color: var(--Very-dark-blue-card);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+img{
+    border-radius: 10px;
+    max-width: 340px;
+}
+.copy--title {
+    font-size: 24px;
+    font-weight: 600;
+
+    margin: 25px 0px;
+}
+.copy--descri {
+    font-size: 20px;
+    color: var(--Soft-blue);
+    font-weight: 200;
+    margin: 30px 0px;
+}
+
+.copy__down {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 25px 0px;
+}
+.time, .price {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+.price {
+    color: var(--Cyan);
+}
+.time {
+    color: var(--Soft-blue);
+}
+.icon {
+    margin-right: 8px;
+}
+hr {
+    border: 1px solid ;
+    color: var(--Very-dark-blue-line);
+}
+.creator{
+    display: flex;
+    align-items: center;
+
+    margin: 25px 0px;
+    color: var(--Soft-blue);
+}
+.creator a {
+    color: white;
+}
+.creator--img {
+    width: 30px;
+    border-radius: 50px;
+    border: 2px solid white;
+    margin-right: 15px;
+}
+.attribution {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.attribution a{
+    font-size: 16px;
+    font-weight: 200;
+    color: var(--Cyan);    
+}
